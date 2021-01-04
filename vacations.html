@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+	<meta charset="utf-8">
+	<title>My Dream Vacations</title>
+	<style>
+	  body {
+  border-style:	       dashed;
+  border-color:	       black;
+  background-color:    #9BADDE;
+  font-size:           medium;
+  font-family:         Verdana, Helvetica, Arial, sans-serifl;
+  line-height:         1.6em;
+}
+
+h1, h2 {
+  color:               gray;
+}
+
+h1, h2 {
+  font-size:           150%;
+}
+
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: green;
+}
+
+table  {
+  margin-left: 20px;
+  margin-right: 20 px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th  {
+  border: medium dotted black;
+  padding: 5px;
+  height: 50px;
+  vertical-align: center;
+}
+
+
+th  {
+  text-align: center;
+  background-color: gray;
+  color: black;
+}
+
+td  {
+  text-align: left;
+  background-color: white;
+  color: gray;
+}
+
+form  {
+display: table;
+padding: 10px;
+border: medium dotted black;
+background color: #e1ceb8;
+}
+
+div.tableRow  {
+vertical-align: top;
+padding: 3px;
+}
+
+#nav {
+   background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+}
+
+#nav * {
+   display: inline;
+}
+
+#nav li a {
+   margin: 20px;
+   float: left;
+   width: 104px;
+   height: 65px;
+   padding: 10px 0 0 10px;
+   color: salmon;
+   text-decoration: none;
+   border-right: 1px solid #777;
+}
+
+#nav li a.active {
+   background: #222;
+}
+
+#subnav {
+   margin: 0;
+   padding: 0;
+   background-color: white;
+   height: 46px;
+   margin-top: 80px;
+}
+
+#subnav ul li {
+   float: left;
+   margin: 0;
+   padding: 15px 25px 15px 10px;
+   font-size: 1.4em;
+}
+
+#subnav li a {
+   padding: 10px 0 10px 35px;
+   color: #333;
+   text-decoration: none;
+}
+
+#subnav * {
+   display: inline;
+}
+
+	  </style>
+   </head>
+   <body>
+<div id="header">
+	  <ul id="nav">
+	    <li><a title="main page" href="home2.html">Main Page</a></li>
+	    <li><a title="family" href="family.html">Family</a></li>
+	    <li><a title="cat" href="kitten.html">Kitten</a></li>
+	    <li><a title="hometown" href="hometown.html">Hometown</a></li>
+	    <li><a title="vacations" href="vacations.html">Dream Vacations</a></li>
+	  </ul>
+	</div>
+	<div id="subnav">
+	  <ul>
+	    <li class="option"><strong>Main Page</strong></li>
+	    <li><a href="about.html">About</a></li>
+	    <li><a href="contact.html">Contact</a></li>
+	    <li><a href="vacations.html">Vacation Form</a></li>
+	  </ul>
+	</div>
+
+        <h1>Welcome to my Dream Vacations</h1>
+	<table>
+	  <caption>
+		<strong>Some cities that I would love to visit!</strong>
+	  </caption>
+	  <tr>
+	    <th>City</th>
+	    <th>Country/State</th>
+	    <th>Season</th>
+	    <th>Adventures</th>
+	    <th>Average Temp. (F)</th>
+	  </tr>
+	  <tr>
+	    <td>Tokyo</td>
+	    <td>Japan</td>
+            <td>Winter</td>
+	    <td>Tokyo Tower, Tokyo Skytree, Eat, Hike, Imperial Palace</td>
+	    <td>35-50 degrees in the Winter</td>
+	  </tr>
+	  <tr>
+	    <td>Kailua</td>
+	    <td>Hawaii</td>
+            <td>Summer</td>
+	    <td>Na Mokulua, Beach, Hike, Swim, Deep Sea Diving, Fish</td>
+	    <td>74-84 degrees in the Summer</td>
+	  </tr>
+	  <tr>
+	    <td>Sydney</td>
+	    <td>Australia</td>
+            <td>Summer</td>
+	    <td>Sydney Opera House, Sydney Harbour Bridge, Hike, Sunsets, Beach</td>
+	    <td>49-63 degrees in the Summer</td>
+	  </tr>
+	  <tr>
+	    <td>Lunenburg</td>
+	    <td>Novia Scotia</td>
+            <td>Fall</td>
+	    <td>Hike in The Mountains, Fish, Lunenburg Waterfront, Eat Seafood</td>
+	    <td>48-58 degrees in the Fall</td>
+	  </tr>
+	  <tr>
+	    <td>Cape Town</td>
+	    <td>South Africa</td>
+            <td>Spring</td>
+	    <td>Table Mountain, Cape of Good Hope, Robben Island, Swim, Hike</td>
+	    <td>59-77 degrees in the Spring</td>
+	  </tr>
+	</table>
+	<h2>Fill out the form if you want to go on one of these vacations together!</h2>
+	<form method="POST">
+	<div class="tableRow">
+	First Name: <input type="text" name="firstname"> <br>
+	Last Name: <input type="text" name="lastname"> <br>
+	Email: <input type="text" name="email">
+	</div>
+	<div class="tableRow">
+	<p>Are you interested in a vacation?: <br>
+		<input type="radio" name="yesorno" value = "No"> No <br>
+		<input type="radio" name="yesorno" value = "Yes"> Yes <br>
+		<input type="radio" name="yesorno" value = "Possibly!"> Possibly! <br>
+	</p>
+	</div>
+	<div class="tableRow">
+	Destination: <br>
+	<input type="checkbox" name="location" value = "Tokyo"> Tokyo <br>
+	<input type="checkbox" name="location" value = "Kailua"> Kailua <br>
+	<input type="checkbox" name="location" value = "Sydney"> Sydney <br>
+	<input type="checkbox" name="location" value = "Lunenburg"> Lunenburg <br>
+	<input type="checkbox" name="location" value = "Cape Town"> Cape Town <br>
+	<input type="checkbox" name="location" value = "Other"> Other <br>
+	Other Destination: <input type="text" name="other"> <br>
+	</div>
+	<div class="tableRow">
+	Season: <select name="seasons"> <br>
+	     <option value="Winter">The Winter</option>
+	     <option value="Spring">The Spring</option>
+	     <option value="Summer">The Summer</option>
+	     <option value="Fall">The Fall</option>
+	</select> <br>
+	</div>
+	<div class="tableRow">
+	Questions/Concerns: <br>
+	<textarea name="comments" rows="7" cols="50">Type Here</textarea> <br>
+	</div>
+	<div class="tableRow">
+	Phone Number:<input type="tel"> <br>
+	<input type="submit"> <br>
+	</div>
+	</form>
+
+      <a href="home2.html"><strong>back</strong></a>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+	<meta charset="utf-8">
+	<title>Where I am From</title>
+	<style>
+	  body {
+  border-style:	       dashed;
+  border-color:	       black;
+  background-color:    #FF7369;
+  font-size:           medium;
+  font-family:         Verdana, Helvetica, Arial, sans-serif;
+  line-height:         1.6em;
+}
+
+h1, h2 {
+  color:               gray;
+}
+
+h1 {
+  font-size:           150%;
+}
+
+h2 {
+  font-size:           130%;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: green;
+}
+
+#nav {
+   background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+}
+
+#nav * {
+   display: inline;
+}
+
+#nav li a {
+   margin: 20px;
+   float: left;
+   width: 104px;
+   height: 65px;
+   padding: 10px 0 0 10px;
+   color: salmon;
+   text-decoration: none;
+   border-right: 1px solid #777;
+}
+
+#nav li a.active {
+   background: #222;
+}
+
+#subnav {
+   margin: 0;
+   padding: 0;
+   background-color: white;
+   height: 46px;
+   margin-top: 80px;
+}
+
+#subnav ul li {
+   float: left;
+   margin: 0;
+   padding: 15px 25px 15px 10px;
+   font-size: 1.4em;
+}
+
+#subnav li a {
+   padding: 10px 0 10px 35px;
+   color: #333;
+   text-decoration: none;
+}
+
+#subnav * {
+   display: inline;
+}
+
+	  </style>
+   </head>
+   <body>
+<div id="header">
+    <ul id="nav">
+      <li><a title="main page" href="home2.html">Main Page</a></li>
+      <li><a title="family" href="family.html">Family</a></li>
+      <li><a title="cat" href="kitten.html">Kitten</a></li>
+      <li><a title="hometown" href="hometown.html">Hometown</a></li>
+      <li><a title="vacations" href="vacations.html">Dream Vacations</a></li>
+    </ul>
+  </div>
+  <div id="subnav">
+    <ul>
+      <li class="option"><strong>Main Page</strong></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="vacations.html">Vacation Form</a></li>
+    </ul>
+  </div>
+
+
+      <h1>A picture of downtown Stillwater!</h1>
+	<img src="images/stillwater.jpeg" alt="Stillwater">
+      <p>
+	Stillwater is a very unique town.  It is the birthplace of Minnesota, and has a very beautiful downtown, as seen in the picture.  Stillwater is a river town, and is right across the river from the state of Wisconsin.
+      </P>
+	<h2>If you're ever interested in checking Stillwater out, visit this <a href="https://www.discoverstillwater.com/things-to-do/">link</a>!</h2>
+
+      <a href="home2.html"><strong>back</strong></a>
+</body>
+</html>
